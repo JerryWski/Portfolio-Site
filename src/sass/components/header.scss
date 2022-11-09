@@ -5,7 +5,7 @@
 }
 
 .nav {
-  height: 100%;
+  //   height: 100%;
   display: flex;
   justify-content: space-between;
 
@@ -22,6 +22,7 @@
     list-style: none;
     justify-content: space-between;
   }
+  
 
   &__links {
     font-family: var(--font);
@@ -35,17 +36,33 @@
     display: none;
   }
 
+  &__hamburger:focus {
+    outline: none;
+  }
+
   @media (max-width: 560px) {
+    nav {
+      align-items: flex-start;
+    }
     &__hamburger {
+    margin: rem(20);
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
       display: block;
       border: none;
       background-color: transparent;
       color: #333;
-      font-size: rem(30);
+      font-size: rem(40);
     }
 
     &__list {
-        display: none;
+      display: none;
+      margin: 0;
     }
+
+    ul.show {
+        display: block;
+      }
   }
 }
