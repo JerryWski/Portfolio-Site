@@ -1,31 +1,51 @@
 @use "../utils" as *;
 
 .header {
-    // height: 200px;
+  background-color: rgb(202, 186, 186);
 }
 
 .nav {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
 
-    &__image {
-        width: 150px;
-        height: 150px;
+  &__image {
+    width: 150px;
+    height: 150px;
+    padding: rem(20);
+  }
+
+  &__list {
+    padding: rem(20);
+    width: 400px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  &__links {
+    font-family: var(--font);
+    font-weight: 300;
+    text-decoration: none;
+    color: #333;
+  }
+
+  //hamburger icon
+  &__hamburger {
+    display: none;
+  }
+
+  @media (max-width: 560px) {
+    &__hamburger {
+      display: block;
+      border: none;
+      background-color: transparent;
+      color: #333;
+      font-size: rem(30);
     }
 
     &__list {
-        padding: rem(20);
-        width: 400px;
-        display: flex;
-        list-style: none;
-        justify-content: space-between;
+        display: none;
     }
-
-    &__links {
-        font-family: var(--font);
-        font-weight: 300;
-        text-decoration: none;
-        
-    }
+  }
 }
