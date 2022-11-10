@@ -18,9 +18,10 @@
 
   &__list {
     padding: rem(20);
-    width: 400px;
+    width: 600px;
     display: flex;
     list-style: none;
+    align-items: center;
     justify-content: space-between;
     
   }
@@ -30,10 +31,11 @@
     font-weight: 300;
     text-decoration: none;
     color: #333;
+    font-size: rem(27);
   }
 
 
-  @media (max-width: 560px) {
+  @media (max-width: 700px) {
     nav {
       align-items: flex-start;
     }
