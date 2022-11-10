@@ -1,21 +1,19 @@
 @use "../utils" as *;
 
 .header {
-  background-color: rgb(202, 186, 186);
+  background-color: #000;
 }
 
 .nav {
-  //   height: 100%;
+  width: 100%;
   display: flex;
+  margin: 0 auto;
   justify-content: space-between;
-  
 
   &__image {
-    width: 150px;
-    height: 150px;
-    padding: rem(10);
-    
-  
+    width: 120px;
+    height: 120px;
+    padding: rem(20);
   }
 
   &__list {
@@ -25,17 +23,15 @@
     list-style: none;
     align-items: center;
     justify-content: space-between;
-    
   }
 
   &__links {
     font-family: var(--font);
     font-weight: 300;
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-size: rem(27);
   }
-
 
   @media (max-width: 700px) {
     nav {
@@ -43,19 +39,17 @@
     }
 
     &__image {
-      margin: 0 auto;
+      display: none;
     }
 
     &__list {
       display: none;
       margin: 0;
-      
     }
 
     ul.show {
       display: flex;
       flex-direction: column;
-      
     }
   }
 }
