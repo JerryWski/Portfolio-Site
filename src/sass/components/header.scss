@@ -63,6 +63,24 @@
       display: none;
       margin: 0;
     }
+    &__list.active {
+      width: 100%;
+      height: 100vh;
+      background-color: #000;
+      position: absolute;
+      display: flex;
+      
+      justify-content: center;
+      flex-direction: column;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    &__list.active li {
+      padding: rem(10);
+    }
 
     ul.show {
       display: flex;

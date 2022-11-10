@@ -14,6 +14,7 @@
     background-color: transparent;
     border: 0;
     align-items: center;
+    z-index: 100;
     margin-left: rem(10);
     overflow: visible; }
     .hamburger:hover {
@@ -61,5 +62,6 @@
    @media (min-width:701px) {
     .hamburger {
       display: none;
+    
     }
    }
