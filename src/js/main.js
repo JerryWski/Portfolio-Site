@@ -1,8 +1,8 @@
-const hamburgerBtn = document.querySelector('.nav__hamburger');
+const hamburgerBtn = document.querySelector('.hamburger');
 const navList = document.querySelector('.nav__list');
 
 const toggleButton = () => {
-    navList.classList.toggle('show')
+    hamburgerBtn.classList.toggle('is-active');
 }
 
 
