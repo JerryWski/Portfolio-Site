@@ -1,7 +1,7 @@
 @use "../utils" as *;
 
 .hamburger {
-  padding: 15px 15px;
+  padding: 12px;
   display: flex;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -11,7 +11,8 @@
   color: inherit;
   text-transform: none;
   background-color: transparent;
-  border: 0;
+  border: 2px solid #fff;
+  border-radius: rem(10);
   align-items: center;
   z-index: 100;
   outline: none;
@@ -45,7 +46,8 @@
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-  width: 20px;
+  margin: auto;
+  width: 30px;
   height: 2px;
   background-color: #fff;
   border-radius: 4px;
@@ -74,7 +76,7 @@
   transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
-@media (min-width: 701px) {
+@media (min-width: 758px) {
   .hamburger {
     display: none;
   }
