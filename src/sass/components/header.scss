@@ -3,14 +3,12 @@
 .header {
   padding: rem(10);
   background-color: var(--bg-black);
-  
 }
 
 .nav {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  
 
   &__logo {
     width: 120px;
@@ -21,9 +19,8 @@
   }
 
   &__name {
-    
     color: #fff;
-    
+
     margin-right: auto;
     font-family: var(--font);
     font-size: rem(30);
@@ -56,22 +53,23 @@
     color: #fff;
     font-size: rem(25);
   }
+}
 
-  @media (min-width:758px) and (max-width:1000px) {
+  @media (min-width: 758px) and (max-width: 1000px) {
     &__logo {
       width: 100px;
       height: 100px;
       padding: rem(18);
     }
-  
+
     &__name {
       font-size: rem(25);
       font-weight: 700;
       margin: auto;
-  
+
       span {
         font-size: rem(40);
-        color: hsl(263, 58%, 30%);
+        color: hsl(288, 60%, 30%);
       }
     }
     &__links {
@@ -92,14 +90,12 @@
       font-size: rem(25);
       margin: auto;
       padding-bottom: rem(10);
-      
-      
+
       span {
         color: hsl(263, 58%, 30%);
         font-size: rem(50);
       }
     }
-    
 
     &__list {
       width: 100%;
@@ -114,8 +110,7 @@
       left: 0;
       right: 0;
       transform: translateX(-1050px);
-      transition: transform .4s ease-in-out;
-      
+      transition: transform 0.4s ease-in-out;
     }
     &__list.active {
       transform: translateX(0);
@@ -126,7 +121,7 @@
       flex-direction: column;
     }
   }
-}
+
 
 @keyframes rotate {
   from {
