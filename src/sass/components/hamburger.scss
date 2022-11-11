@@ -15,8 +15,8 @@
   align-items: center;
   z-index: 100;
   outline: none;
-  margin-left: rem(5);
-  margin-right: rem(15);
+  margin-left: rem(3);
+  margin-right: rem(30);
   overflow: visible;
 }
 .hamburger:hover {
@@ -32,8 +32,7 @@
 }
 
 .hamburger-box {
-  width: 0px;
-  height: 50%;
+  top: 35px;
   display: inline-block;
   position: relative;
 }
