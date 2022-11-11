@@ -11,12 +11,11 @@
   color: inherit;
   text-transform: none;
   background-color: transparent;
-  border: 2px solid #fff;
-  border-radius: rem(10);
+  border: none;
   align-items: center;
   z-index: 100;
   outline: none;
-  margin-left: rem(10);
+  margin-left: rem(20);
   overflow: visible;
 }
 .hamburger:hover {
@@ -32,8 +31,8 @@
 }
 
 .hamburger-box {
-  width: 30px;
-  height: 24px;
+  width: 0px;
+  height: 50%;
   display: inline-block;
   position: relative;
 }
@@ -48,7 +47,7 @@
 .hamburger-inner::after {
   margin: auto;
   width: 30px;
-  height: 2px;
+  height: 4px;
   background-color: #fff;
   border-radius: 4px;
   position: absolute;
@@ -70,7 +69,7 @@
 
 .hamburger--collapse .hamburger-inner {
   top: auto;
-  bottom: 0;
+  bottom: 2px;
   transition-duration: 0.13s;
   transition-delay: 0.13s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
