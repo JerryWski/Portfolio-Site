@@ -1,4 +1,5 @@
 const hamburgerBtn = document.querySelector('.hamburger');
+console.log(hamburgerBtn);
 const navList = document.querySelector('.nav__list');
 
 const toggleButton = () => {

@@ -42,12 +42,13 @@
     list-style: none;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
+    
     margin-top: rem(30);
     text-decoration: none;
   }
 
   &__links {
+    cursor: pointer;
     text-transform: uppercase;
     font-family: var(--font);
     font-weight: 700;
@@ -124,6 +125,7 @@
       font-size: rem(25);
       margin: auto;
       padding-bottom: rem(10);
+      padding-left: rem(45);
 
       span {
         color: hsl(263, 58%, 30%);
