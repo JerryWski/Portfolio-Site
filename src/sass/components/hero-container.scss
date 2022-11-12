@@ -1,8 +1,10 @@
 @use "../utils" as *;
 
 
-.hero-container {
+.hero__wrapper {
     width: 100%;
     height: 500px;
-    border: 2px solid #fff;
+    
+    position: relative;
+
 }
