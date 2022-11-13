@@ -3,7 +3,8 @@
 .intro-section {
   color: white;
   display: flex;
-  overflow: hidden;
+  height: 500px;
+  display: flex;
   
 }
 
@@ -60,6 +61,28 @@
     color: var(--white);
   }
 }
+
+.hero-image {
+    padding: rem(30);
+    border-radius: 50%;
+    width: 50%;
+    overflow: hidden;
+    opacity: .5;
+    img {
+        object-fit: fill;
+        width: 100%;
+    }
+   
+    
+}
+@media (min-width: 758px) {
+    .hero__button {
+        display: block;
+        margin-top: rem(45);
+        
+    }
+}
+
 @media (max-width: 757px) {
   .hero {
     width: 100%;
