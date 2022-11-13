@@ -5,7 +5,6 @@
   display: flex;
   height: 500px;
   display: flex;
-  
 }
 
 .hero {
@@ -55,6 +54,7 @@
     background-color: var(--white);
     border: none;
     text-align: center;
+    border-radius: 10px;
     transition: 0.4s all ease-out;
   }
   &__button:hover {
@@ -64,32 +64,35 @@
 }
 
 .hero-image {
-    margin-top: rem(20);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: rem(40);
-    width: 50%;
-    opacity: .7;
-    
-    img {
-        overflow: hidden;
-        width: 82%;
-        object-fit: cover;
-        height: 100%;
-        border-radius: 10px;
-        border: 2px solid var(--main-purple);
-        box-shadow:         1px 1px 14px 0px hsla(313, 47%, 96%, 0.86);
-    }
-   
-    
+  margin-top: rem(20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: rem(40);
+  width: 50%;
+  opacity: 0.7;
+  
+
+  img {
+    overflow: hidden;
+    width: 86%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    transition: 2s all;
+  }
+  img:hover {
+    transform: scale(1.1);
+    border: 2px solid var(--main-purple);
+    box-shadow: 1px 1px 14px 0px hsla(313, 47%, 96%, 0.86);
+  }
 }
 @media (min-width: 758px) {
-    .hero__button {
-        display: block;
-        margin-top: rem(45);
-        
-    }
+  .hero__button {
+    display: block;
+    margin-top: rem(45);
+  }
 }
 
 @media (max-width: 757px) {
