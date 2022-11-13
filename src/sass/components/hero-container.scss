@@ -2,8 +2,13 @@
 
 
 .intro-section {
-    
     height: 500px;
     border: 1px solid var(--white);
     color: white;
+    display: flex;
+    justify-content: flex-start;
+
+    .hero {
+        
+    }
 }
