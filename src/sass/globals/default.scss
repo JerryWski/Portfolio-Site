@@ -13,7 +13,8 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: var(--bg-black);
+    background: rgb(25,12,37);
+    background: linear-gradient(349deg, rgba(25,12,37,1) 0%, rgba(5,2,2,1) 100%);
 }
 
 a {
