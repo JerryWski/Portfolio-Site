@@ -1,74 +1,69 @@
 @use "../utils" as *;
 
 .intro-section {
-  border: 1px solid var(--white);
   color: white;
   display: flex;
   overflow: hidden;
 }
 
 .hero {
-  margin-top: rem(50);
   width: 50%;
   padding: rem(20);
-}
 
+  &__occupation {
+    font-size: rem(63);
+    line-height: rem(50);
+    margin-bottom: 0;
+    text-shadow: 2px 2px 2px hsl(312, 52%, 28%);
+    &--dev {
+      color: var(--main-purple);
+      text-shadow: 1px 1px 1px hsl(0, 0%, 100%);
+    }
+  }
+
+  &__name {
+    padding-left: rem(2);
+    text-transform: uppercase;
+    font-size: rem(35);
+    font-weight: 700;
+    margin-top: rem(10);
+    text-shadow: 2px 2px 2px hsl(312, 52%, 28%);
+    &--letter {
+      font-size: rem(55);
+      color: var(--main-purple);
+      text-shadow: 1px 1px 1px hsl(0, 0%, 100%);
+    }
+  }
+
+  &__description {
+    text-align: left;
+    padding: rem(3);
+    font-weight: 300;
+    line-height: rem(30);
+    letter-spacing: rem(2);
+  }
+
+  &__button {
+    margin-top: rem(15);
+    width: 180px;
+    font-size: rem(25);
+    padding: rem(10);
+    color: var(--bg-black);
+    background-color: var(--white);
+    border: none;
+    text-align: center;
+    transition: 0.4s all ease-out;
+  }
+  &__button:hover {
+    background-color: var(--main-purple);
+    color: var(--white);
+  }
+}
 @media (max-width: 757px) {
   .hero {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    &__occupation {
-      font-size: rem(63);
-      line-height: rem(50);
-      margin-bottom: 0;
-      text-shadow: 2px 2px 2px hsl(312, 52%, 28%);
-      &--dev {
-        color: var(--main-purple);
-        text-shadow: 1px 1px 1px hsl(0, 0%, 100%);
-      }
-    }
-
-    &__name {
-      padding-left: rem(2);
-      text-transform: uppercase;
-      font-size: rem(35);
-      font-weight: 700;
-      margin-top: rem(10);
-      text-shadow: 2px 2px 2px hsl(312, 52%, 28%);
-      &--letter {
-        font-size: rem(55);
-        color: var(--main-purple);
-        text-shadow: 1px 1px 1px hsl(0, 0%, 100%);
-      }
-    }
-
-    &__description {
-      text-align: left;
-      padding: rem(3);
-      font-weight: 300;
-      line-height: rem(30);
-      letter-spacing: rem(2);
-    }
-
-    &__button {
-        margin-top: rem(15);
-      width: 180px;
-      font-size: rem(25);
-      padding: rem(10);
-      color: var(--bg-black);
-      background-color: var(--white);
-      border: none;
-      border-radius: rem(30);
-      text-align: center;
-      transition: .4s all ease-out;
-    }
-    &__button:hover {
-        background-color: var(--main-purple);
-        color: var(--white);
-        
-    }
   }
 }
