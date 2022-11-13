@@ -15,6 +15,7 @@
   &__occupation {
     font-size: rem(63);
     line-height: rem(50);
+    margin-top: rem(40);
     margin-bottom: 0;
     text-shadow: 2px 2px 2px hsl(312, 52%, 28%);
     &--dev {
@@ -63,14 +64,22 @@
 }
 
 .hero-image {
-    padding: rem(30);
-    border-radius: 50%;
+    margin-top: rem(20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(40);
     width: 50%;
-    overflow: hidden;
-    opacity: .5;
+    opacity: .7;
+    
     img {
-        object-fit: fill;
-        width: 100%;
+        overflow: hidden;
+        width: 82%;
+        object-fit: cover;
+        height: 100%;
+        border-radius: 10px;
+        border: 2px solid var(--main-purple);
+        box-shadow:         1px 1px 14px 0px hsla(313, 47%, 96%, 0.86);
     }
    
     
@@ -89,5 +98,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero-image {
+    display: none;
   }
 }
