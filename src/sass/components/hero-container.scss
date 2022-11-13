@@ -10,6 +10,9 @@
 .hero {
   width: 50%;
   padding: rem(20);
+  transform: translateX(-1000px);
+  opacity: 0;
+  animation: fade-hero 2s both;
 
   &__occupation {
     font-size: rem(63);
@@ -106,4 +109,18 @@
   .hero-image {
     display: none;
   }
+}
+
+@keyframes fade-hero {
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
