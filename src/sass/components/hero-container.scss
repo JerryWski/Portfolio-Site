@@ -52,5 +52,23 @@
       line-height: rem(30);
       letter-spacing: rem(2);
     }
+
+    &__button {
+        margin-top: rem(15);
+      width: 180px;
+      font-size: rem(25);
+      padding: rem(10);
+      color: var(--bg-black);
+      background-color: var(--white);
+      border: none;
+      border-radius: rem(30);
+      text-align: center;
+      transition: .4s all ease-out;
+    }
+    &__button:hover {
+        background-color: var(--main-purple);
+        color: var(--white);
+        
+    }
   }
 }
