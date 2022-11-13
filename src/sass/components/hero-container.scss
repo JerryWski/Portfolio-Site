@@ -1,14 +1,54 @@
 @use "../utils" as *;
 
-
 .intro-section {
-    height: 500px;
-    border: 1px solid var(--white);
-    color: white;
-    display: flex;
-    justify-content: flex-start;
+  border: 1px solid var(--white);
+  color: white;
+  display: flex;
+  overflow: hidden;
+}
 
-    .hero {
-        
+.hero {
+  margin-top: rem(50);
+  width: 50%;
+  padding: rem(20);
+}
+
+@media (max-width: 757px) {
+  .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__occupation {
+      font-size: rem(63);
+      line-height: rem(50);
+      margin-bottom: 0;
+      text-shadow: 2px 2px 2px hsl(312, 52%, 28%);
+      &--dev {
+        color: var(--main-purple);
+        text-shadow: 1px 1px 1px hsl(0, 0%, 100%);
+      }
     }
+
+    &__name {
+      font-size: rem(35);
+      font-weight: 700;
+      margin-top: rem(10);
+      text-shadow: 2px 2px 2px hsl(312, 52%, 28%);
+      &--letter {
+        padding-left: rem(2);
+        font-size: rem(55);
+        color: var(--main-purple);
+        text-shadow: 1px 1px 1px hsl(0, 0%, 100%);
+      }
+    }
+
+    &__description {
+      text-align: left;
+      padding: rem(3);
+      font-weight: 300;
+      line-height: rem(30);
+    }
+  }
 }
