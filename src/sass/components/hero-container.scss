@@ -3,16 +3,15 @@
 .intro-section {
   color: white;
   display: flex;
-  // height: 500px;
 }
 
 .hero {
   margin-top: rem(60);
   width: 50%;
   padding: rem(20);
-  transform: translateX(-1000px);
-  opacity: 0;
-  animation: fade-hero 1.5s both;
+  // transform: translateX(-1000px);
+  opacity: 1;
+  // animation: fade-hero 1.5s both;
 
   &__occupation {
     font-size: rem(63);
@@ -58,6 +57,8 @@
     border: none;
     text-align: center;
     border-radius: 10px;
+    transform: translateY(0);
+    animation: rubber 10s infinite both;
     transition: 0.4s all ease-out;
   }
   &__button:hover {
@@ -74,12 +75,13 @@
   padding: rem(40);
   width: 50%;
   opacity: 0;
-  transform: translateX(1000px);
+  transform: scale(0);
+  filter: blur(0);
   animation: fade-img 1.5s 1.6s both;
 
   img {
     overflow: hidden;
-    width: 76%;
+    width: 74%;
     object-fit: cover;
     height: 100%;
     border-radius: 10px;
@@ -114,29 +116,47 @@
 }
 
 @keyframes fade-hero {
-    0%{
-        transform: translateX(-1000px);
-        opacity: 0;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes fade-img {
-    0%{
-        transform: translateX(1000px);
-        opacity: 0;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: scale(0);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 0.5;
+    filter: blur(7px);
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rubber {
+  0%{
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateY(-8px);
+  }
+  50%{
+    transform: translateY(8px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
