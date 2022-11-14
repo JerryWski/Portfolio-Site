@@ -3,11 +3,11 @@
 .intro-section {
   color: white;
   display: flex;
-  height: 500px;
-  display: flex;
+  // height: 500px;
 }
 
 .hero {
+  margin-top: rem(60);
   width: 50%;
   padding: rem(20);
   transform: translateX(-1000px);
@@ -79,7 +79,7 @@
 
   img {
     overflow: hidden;
-    width: 86%;
+    width: 76%;
     object-fit: cover;
     height: 100%;
     border-radius: 10px;
