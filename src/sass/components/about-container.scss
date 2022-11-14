@@ -1,7 +1,12 @@
 @use "../utils" as *;
 
-
 .about-section {
+  color: var(--bg-black);
+  background-color: var(--white);
+  margin-top: 300px;
+  .about {
+    padding: rem(20);
     display: flex;
-    
+    flex-direction: column;
+  }
 }
