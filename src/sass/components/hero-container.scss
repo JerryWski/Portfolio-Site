@@ -51,18 +51,17 @@
     width: 180px;
     font-size: rem(30);
     padding: rem(8);
-    color: var(--bg-black);
-    background-color: var(--white);
-    border: none;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
     text-align: center;
-    border-radius: 10px;
     transform: translateY(0);
     animation: rubber 10s infinite both;
     transition: 0.4s all ease-out;
   }
   &__button:hover {
-    background-color: var(--main-purple);
-    color: var(--white);
+    color: var(--main-purple);
+    border: 1px solid var(--main-purple);
   }
 }
 
