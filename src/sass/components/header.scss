@@ -130,13 +130,15 @@
     }
 
     .nav__list {
-      width: 100%;
+      width: 100vw;
       height: 100vh;
       background: linear-gradient(156deg, rgb(0, 0, 0) 0%, rgb(21, 7, 44) 100%);
-      position: absolute;
+      position: fixed;
       display: flex;
+      overflow-x: hidden;
       justify-content: space-evenly;
       flex-direction: column;
+      margin-top: 0;
       bottom: 0;
       top: 0;
       left: 0;
