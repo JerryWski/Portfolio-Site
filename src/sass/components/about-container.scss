@@ -21,6 +21,7 @@
     &__container {
       margin-top: rem(30);
       display: flex;
+      position: relative;
     }
     &__bio {
       width: 50%;
@@ -41,6 +42,30 @@
         line-height: 20px;
         color: var(--main-purple);
       }
+
+      .about__image {
+        width: 50%;
+        
+      }
+
+      .about__image--right {
+        width: 30%;
+        .image__right--one {
+          width: 250px;
+          left: 70%;
+          bottom: 25%;
+          opacity: .4;
+          position: absolute;
+        }
+        .image__right--two {
+          width: 250px;
+          left: 60%;
+          bottom: 0%;
+          opacity: .8;
+          position: absolute;
+        }
+      }
+     
     
   }
 }
@@ -49,5 +74,9 @@
 @media (max-width: 757px) {
   .about__bio {
     flex: 1;
+  }
+
+  .about__image {
+    display: none;
   }
 }
