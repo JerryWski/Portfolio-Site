@@ -10,7 +10,6 @@
   width: 50%;
   padding: rem(20);
   opacity: 1;
-  // animation: fade-hero 1.5s both;
 
   &__occupation {
     font-size: rem(25);
@@ -19,7 +18,7 @@
     margin-bottom: 0;
     text-shadow: 2px 2px 2px hsl(312, 52%, 28%);
     &--dev {
-      color: var(--main-purple);
+      color: var(--second-lime);
       text-shadow: none;
     }
   }
@@ -32,7 +31,7 @@
     margin-bottom: rem(0);
     text-shadow: 2px 2px 2px hsl(312, 52%, 28%);
     &--letter {
-      color: var(--main-purple);
+      color: var(--second-lime);
       text-shadow:none;
     }
   }
@@ -55,12 +54,12 @@
     border: 1px solid white;
     text-align: center;
     transform: translateY(0);
-    animation: rubber 10s infinite both;
+    animation: rubber 8s infinite both;
     transition: 0.4s all ease-out;
   }
   &__button:hover {
-    color: var(--main-purple);
-    border: 1px solid var(--main-purple);
+    color: var(--second-lime);
+    border: 1px solid var(--second-lime);
   }
 }
 
@@ -97,7 +96,19 @@
   }
 }
 
+@media (min-width: 758px) and (max-width: 1200px) {
+    .hero-image{ 
+      width: 55%;
+      img {
+      height: 60%;
+      
+    }}}
+  
+
 @media (max-width: 757px) {
+  header,.intro-section {
+    background-color: var(--main-purple);
+  }
   .hero {
     width: 100%;
     display: flex;

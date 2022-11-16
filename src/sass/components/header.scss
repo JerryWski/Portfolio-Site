@@ -78,7 +78,7 @@
   &__links:last-of-type a {
     padding: rem(5);
     background-color: #fff;
-    color: var(--bg-black);
+    color: var(--second-lime);
     transition: .4s all;
   }
   &__links:last-of-type a:hover {
@@ -132,7 +132,7 @@
     .nav__list {
       width: 100vw;
       height: 100vh;
-      background: linear-gradient(156deg, rgb(0, 0, 0) 0%, rgb(21, 7, 44) 100%);
+      background-color: var(--second-lime);
       position: fixed;
       display: flex;
       overflow-x: hidden;
