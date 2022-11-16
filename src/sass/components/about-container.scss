@@ -11,8 +11,9 @@
     flex-direction: column;
 
     &__header {
-      font-size: rem(50);
+      font-size: rem(70);
       margin-top: rem(50);
+      font-weight: 700;
       margin-bottom: rem(50);
       text-transform: uppercase;
       color: var(--main-purple);
@@ -29,7 +30,7 @@
       
       .about__subheader {
         color: var(--main-purple);
-        font-size: rem(35);
+        font-size: rem(45);
         text-transform: lowercase;
         font-weight: 300;
         margin-top: 0;
@@ -39,7 +40,7 @@
         font-size: rem(15);
         color: var(--bg-black);
         font-weight: 300;
-        line-height: 20px;
+        line-height: 25px;
         color: var(--main-purple);
       }
 
@@ -48,7 +49,7 @@
         
       }
 
-      .about__image--right {
+      .image__right {
         width: 30%;
         .image__right--one {
           width: 250px;
@@ -64,6 +65,13 @@
           opacity: .8;
           position: absolute;
         }
+        .image__right--three {
+          width: 250px;
+          left: 80%;
+          top: -50%;
+          opacity: .8;
+          position: absolute;
+        }
       }
      
     
@@ -72,6 +80,12 @@
 
 
 @media (max-width: 757px) {
+  .about-section {
+    .about__header {
+      font-size: rem(50);
+    }
+  }
+
   .about__bio {
     flex: 1;
   }
