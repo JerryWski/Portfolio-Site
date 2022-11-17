@@ -6,13 +6,13 @@
   margin-top: 300px;
 
   .about {
-    padding: rem(20);
+    padding: rem(46);
     display: flex;
     flex-direction: column;
 
     &__header {
       font-size: rem(70);
-      margin-top: rem(50);
+      margin-top: rem(40);
       font-weight: 700;
       margin-bottom: rem(50);
       text-transform: uppercase;
@@ -20,14 +20,22 @@
     }
 
     &__container {
-      margin-top: rem(30);
+      margin-top: rem(10);
       display: flex;
       position: relative;
     }
     &__bio {
       width: 50%;
+      padding: rem(50) 0;
+      padding-top: rem(10);
+      align-self: flex-start;
     }
-
+    &__bio--left {
+      margin-right: rem(50);
+    }
+    &__bio--right {
+      padding: 0;
+    }
     .about__subheader {
       color: var(--main-purple);
       font-size: rem(45);
@@ -54,6 +62,7 @@
         width: 250px;
         left: 70%;
         bottom: 25%;
+        opacity: .5;
         position: absolute;
         transform: translateX(0px);
         animation: slide-left 10s linear infinite both;
@@ -62,7 +71,6 @@
         width: 250px;
         left: 60%;
         bottom: 0%;
-        opacity: 0.8;
         position: absolute;
         transform: translateX(0px);
         animation: slide-right 10s linear infinite both;
@@ -76,13 +84,32 @@
         animation: slide-up 10s linear infinite both;
       }
     }
+    .image__left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &--one {
+        // position: absolute;
+        height: 200px;
+        width: 100%;
+        padding-right: 200px;
+        
+        object-fit: fill;
+      }
+    }
   }
 }
 
 @media (max-width: 757px) {
   .about-section {
     .about__header {
-      font-size: rem(50);
+      font-size: rem(43);
+    }
+    .about__bio--left {
+      margin-right: 0;
+    }
+    .about .image__left {
+      display: none;
     }
   }
 
@@ -93,6 +120,11 @@
   .about__image {
     display: none;
   }
+
+}
+
+@media (max-width:758px) and (min-width) {
+
 }
 
 @keyframes slide-left {

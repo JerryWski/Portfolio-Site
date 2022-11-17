@@ -3,6 +3,7 @@
 .intro-section {
   color: white;
   display: flex;
+  padding: rem(20);
 }
 
 .hero {
@@ -16,7 +17,7 @@
     line-height: rem(50);
     margin-top: rem(20);
     margin-bottom: 0;
-    text-shadow: 2px 2px 2px hsl(312, 52%, 28%);
+    text-shadow: 1px 1px 1px hsl(312, 52%, 28%);
     &--dev {
       color: var(--second-lime);
       text-shadow: none;
@@ -24,7 +25,6 @@
   }
 
   &__name {
-    padding-left: rem(2);
     font-size: rem(72);
     font-weight: 700;
     margin-top: rem(10);
@@ -116,8 +116,13 @@
     align-items: flex-start;
 
     &__occupation {
-      font-size: rem(44);
+      font-size: rem(40);
       }
+
+    &__name {
+      width: 100%;
+      font-size: rem(62);
+    }
   }
 
   .hero-image {
