@@ -24,19 +24,25 @@
       display: flex;
       position: relative;
     }
-    .right {
-      display: flex;
-    }
+    // .right {
+    //   margin-bottom: 233px;
+    // }
+    //add in future animations for both blocks
     &__bio {
       width: 50%;
       padding: rem(30) 0;
-      align-self: center;
     }
+    
     &__bio--left {
       margin-right: rem(50);
     }
     &__bio--right {
-      padding: 0;
+      background-image: url(/src/img/stairs2.svg);
+      background-repeat: no-repeat;
+      background-position-x: 160px;
+      background-size: contain;
+      
+      width: 80%;
     }
     .about__subheader {
       color: var(--main-purple);
@@ -90,10 +96,24 @@
       width: 50%;
       display: flex;
       justify-content: center;
-      align-items: center;
       &--one {
-        
+        width: 300px;
+        object-fit: fill;
+        transform: rotate(0);
+        opacity: .5;
+        animation: rotate 20s infinite linear both;
+       
       }
+      // &--two {
+        
+      //   top: 10%;
+      //   left: 30%;
+      //   transform: translate(-30%, -10%);
+      //   transform: rotate(90deg);
+      //   position: absolute;
+      //   width: 300px;
+      // }
+      
     }
   }
 }
@@ -117,9 +137,6 @@
   .about__image {
     display: none;
   }
-}
-
-@media (max-width: 758px) and (min-width) {
 }
 
 @keyframes slide-left {
@@ -153,5 +170,23 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@keyframes scale-up {
+  0%{
+    transform: scale(1);
+  }
+  25%{
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1);
+  }
+  75%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
   }
 }
