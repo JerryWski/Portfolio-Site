@@ -1,13 +1,13 @@
 @use "../utils" as *;
 
 .about-section {
-  color: var(--bg-black);
   background-color: var(--white);
-  margin-top: 300px;
+  margin-top: 200px;
+  display: flex;
 
   .about {
-    padding: rem(46);
-    display: flex;
+    margin: 0 auto;
+    padding: rem(45);
     flex-direction: column;
 
     &__header {
@@ -24,9 +24,6 @@
       display: flex;
       position: relative;
     }
-    // .right {
-    //   margin-bottom: 233px;
-    // }
     //add in future animations for both blocks
     &__bio {
       width: 50%;
@@ -120,6 +117,9 @@
 
 @media (max-width: 757px) {
   .about-section {
+    .wrapper {
+      padding: rem(20);
+    }
     .about__header {
       font-size: rem(43);
     }
@@ -136,6 +136,11 @@
 
   .about__image {
     display: none;
+  }
+}
+@media (min-width: 758px) {
+  .about {
+    overflow: hidden;
   }
 }
 
