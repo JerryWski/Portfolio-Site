@@ -41,10 +41,8 @@
   &__description {
     font-size: rem(15);
     text-align: left;
-    padding: rem(3);
     font-weight: 300;
     line-height: rem(30);
-    letter-spacing: rem(2);
   }
 
   &__button {
@@ -90,7 +88,7 @@
   }
   
 }
-@media (min-width: 758px) {
+@media (min-width: 671px) {
   .hero__button {
     display: block;
     margin-top: rem(45);
@@ -108,12 +106,12 @@
     align-items: flex-start;
 
     &__occupation {
-      font-size: rem(40);
+      font-size: rem(30);
       }
 
     &__name {
       width: 100%;
-      font-size: rem(62);
+      font-size: rem(40);
     }
   }
   .hero-image {

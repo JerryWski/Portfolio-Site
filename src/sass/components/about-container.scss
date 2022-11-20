@@ -2,13 +2,11 @@
 
 .about-section {
   background-color: var(--white);
-  margin-top: 200px;
+  margin-top: 300px;
   display: flex;
 
   .about {
-    margin: 0 auto;
-    padding: rem(45);
-    flex-direction: column;
+    padding: rem(49);
 
     &__header {
       font-size: rem(70);
