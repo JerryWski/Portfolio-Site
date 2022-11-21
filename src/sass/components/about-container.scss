@@ -27,7 +27,7 @@
       width: 50%;
       padding: rem(30) 0;
     }
-    
+
     &__bio--left {
       margin-right: rem(50);
     }
@@ -36,7 +36,7 @@
       background-repeat: no-repeat;
       background-position-x: 160px;
       background-size: contain;
-      
+
       width: 80%;
     }
     .about__subheader {
@@ -95,20 +95,9 @@
         width: 300px;
         object-fit: fill;
         transform: rotate(0);
-        opacity: .5;
+        opacity: 0.5;
         animation: rotate 20s infinite linear both;
-       
       }
-      // &--two {
-        
-      //   top: 10%;
-      //   left: 30%;
-      //   transform: translate(-30%, -10%);
-      //   transform: rotate(90deg);
-      //   position: absolute;
-      //   width: 300px;
-      // }
-      
     }
   }
 }
@@ -176,20 +165,3 @@
   }
 }
 
-@keyframes scale-up {
-  0%{
-    transform: scale(1);
-  }
-  25%{
-    transform: scale(0);
-  }
-  50%{
-    transform: scale(1);
-  }
-  75%{
-    transform: scale(0);
-  }
-  100%{
-    transform: scale(1);
-  }
-}
