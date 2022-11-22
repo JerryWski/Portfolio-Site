@@ -15,7 +15,7 @@ const removeSticky = () => {
 };
 
 for (const btn of arrowBtns) {
-  btn.addEventListener("mouseover", function () {
+  btn.addEventListener("mouseenter", function () {
     this.classList.add("hide");
   });
 }
