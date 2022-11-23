@@ -15,10 +15,15 @@
     }
     p {
       margin: 0;
+      padding: rem(5);
       text-transform: none;
       font-size: rem(15);
       font-weight: 300;
       line-height: 25px;
+
+      a {
+        color: var(--second-lime);
+      }
       
     }
   }
@@ -33,7 +38,7 @@
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(4, 1fr);
     gap: 103px;
-    margin-top: rem(50);
+    margin-top: rem(80);
     margin-bottom: rem(100);
 
     .card {
@@ -52,20 +57,24 @@
 
       &__button {
         display: block;
-        left: 50%;
-        top: 5%;
-        width: 70px;
-        transform: translateX(-50%);
-        padding: rem(5);
+        left: 75%;
+        top: 80%;
+        width: 100px;
+        border-radius: 50%;
+        padding: rem(25);
         position: absolute;
         z-index: 10;
         border: none;
-        background: none;
-        color: var(--main-purple);
+        background: var(--main-purple);
+        color: var(--second-lime);
+        font-size: rem(15);
+        font-weight: 700;
         cursor: pointer;
 
-        img {
-          width: 55px;
+        .fa-circle-info {
+          position: relative;
+          top: -5px;
+          left: -6px;
         }
         
         &::before {
@@ -99,7 +108,7 @@
         bottom: 0;
         right: 0;
         color: var(--white);
-        clip-path: circle(0 at 50.4% 14.45%);
+        clip-path: circle(0 at 87.4% 92.4%);
         transition: clip-path 0.6s;
 
         .card-title {
@@ -120,10 +129,12 @@
     }
     .card:hover {
       transform: scale(1.1);
+      opacity: 1;
     }
     .one {
       background-image: url(/src/img/project1.jpg);
       text-align: center;
+      opacity: .8;
     }
 
     .two {
