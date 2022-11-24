@@ -154,6 +154,16 @@
     .four {
       background-image: url(/src/img/project5.jpg);
     }
+
+    .card-link {
+      padding-top: rem(20);
+      color: var(--second-lime);
+      text-align: center;
+      text-decoration:overline;
+      display: block;
+      font-size: rem(15);
+      font-weight: 300;
+    }
   }
 }
 
