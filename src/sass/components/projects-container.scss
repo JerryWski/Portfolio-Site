@@ -2,6 +2,7 @@
 
 .projects-section {
   background-color: var(--main-purple);
+  position: relative;
 
   .projects-header {
     padding-left: rem(49);
@@ -10,7 +11,7 @@
       position: relative;
       font-size: rem(60);
       margin-top: rem(89);
-      margin-bottom: rem(10);
+      margin-bottom: rem(30);
       text-align: left;
     }
     p {
@@ -26,17 +27,39 @@
       }
     }
   }
+  .projects-bg-image {
+    top: -6%;
+    margin: auto;
+    position: absolute;
+    left: 83%;
+    width: 250px;
+    img {
+      transform: rotate(0);
+      animation: gears-rotate 20s linear infinite both;
+      transform: translateX(-50%);
+    }
+  }
 
   .projects {
+    margin-top: rem(20);
     display: grid;
     justify-items: center;
+    .gear-image {
+      transform: rotate(0);
+      animation: gears-rotate 20s linear infinite both;
+      position: absolute;
+      top: 13%;
+      width: 40px;
+    }
   }
 
   .cards-container {
+    border-top: 2px solid var(--white);
+    padding-top: rem(30);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: rem(100);
-    margin-top: rem(80);
+    gap: rem(90);
+    margin-top: rem(40);
     margin-bottom: rem(100);
 
     .card {
@@ -156,18 +179,21 @@
     }
 
     .card-link {
-      padding-top: rem(20);
+      padding-top: rem(28);
       color: var(--second-lime);
       text-align: center;
-      text-decoration:overline;
+      text-decoration: overline;
       display: block;
-      font-size: rem(15);
+      font-size: rem(25);
       font-weight: 300;
     }
   }
 }
 
 @media (max-width: 600px) {
+  .projects-section .projects .gear-image {
+    top: 8%;
+  }
   .projects {
     .cards-container {
       grid-template-columns: repeat(1, 1fr);
@@ -186,8 +212,26 @@
     }
   }
 }
+@media (max-width: 973px) {
+  .projects-section {
+    .projects-bg-image {
+      display: none;
+    }
+  }
+}
+@media (min-width: 974px) {
+  .projects-section .projects .gear-image {
+    display: none;
+  }
+}
+
 
 @media (min-width: 601px) and (max-width: 1200px) {
+  .projects-section {
+    .projects-bg-image {
+      top: -3%;
+    }
+  }
   .projects {
     .cards-container {
       grid-template-columns: repeat(2, 1fr);
@@ -197,6 +241,11 @@
 }
 
 @media (min-width: 1201px) and (max-width: 1557px) {
+  .projects-section {
+    .projects-bg-image {
+      top: -4%;
+    }
+  }
   .projects {
     .cards-container {
       grid-template-columns: repeat(3, 1fr);
@@ -215,5 +264,16 @@
   to {
     transform: scale(1.4);
     opacity: 0;
+  }
+}
+
+@keyframes gears-rotate {
+  0% {
+    transform: rotate(0);
+    transform-origin: center;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
   }
 }
