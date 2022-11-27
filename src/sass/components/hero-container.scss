@@ -73,7 +73,7 @@
   justify-content: center;
   align-items: center;
   padding: rem(20);
-  width: rem(280);
+  width: rem(240);
   height: rem(300);
   position: relative;
 
@@ -83,8 +83,9 @@
     height: inherit;
     margin-right: rem(-110);
     margin-top: rem(100);
-    background-image: url(/src/img/metwo2.jpg);
-    background-size: cover;
+    background-image: url(/src/img/img2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position-x: center;
   }
   
@@ -94,6 +95,7 @@
     display: block;
     margin-top: rem(45);
   }
+  
 }
 
 @media (max-width: 670px) {
@@ -122,6 +124,7 @@
     padding: 0;
     margin: 30px;
     .hero-avatar {
+      background-image: url(/src/img/img3.jpg);
       width: 100%;
       left: 20px;
       top: -81px;
