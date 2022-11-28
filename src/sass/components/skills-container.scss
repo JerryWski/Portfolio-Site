@@ -1,0 +1,21 @@
+@use "../utils" as *;
+
+.skills-section {
+  width: 100%;
+  background-color: #fff;
+}
+
+.skills-header {
+  padding-left: rem(49);
+  color: var(--main-purple);
+  font-size: rem(60);
+  margin-top: rem(89);
+  margin-bottom: rem(30);
+}
+
+@media (max-width: 757px) {
+  .skills-header {
+    padding-left: 1.063rem;
+    font-size: rem(43);
+  }
+}
