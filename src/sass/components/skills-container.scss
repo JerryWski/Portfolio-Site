@@ -61,8 +61,13 @@
     flex-direction: column;
     width: 100%;
   }
+  
+  .image {
+    display: none;
+  }
 
   .skill {
+    border-radius: 18px;
     border: 10px solid white;
     width: 90%;
     display: flex;
