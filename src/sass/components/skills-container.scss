@@ -3,7 +3,6 @@
 .skills-section {
   padding-top: rem(20);
   padding-bottom: rem(40);
-  width: 100%;
   background-color: var(--white);
 }
 
@@ -14,13 +13,28 @@
   margin-bottom: rem(30);
 }
 
+.skills-wrapper{
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.image{
+  position: relative;
+  &__skill {
+    width: 450px;
+  }
+ 
+}
+
 .skills-container {
   margin-top: rem(55);
   margin-bottom: rem(55);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   width: 50%;
 }
 
@@ -49,6 +63,7 @@
   }
 
   .skill {
+    border: 10px solid white;
     width: 90%;
     display: flex;
     flex-direction: column;
