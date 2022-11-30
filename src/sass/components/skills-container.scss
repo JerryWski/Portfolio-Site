@@ -19,30 +19,33 @@
   content: '';
   opacity: .4;
   height: 35px;
-  margin-left: rem(-387);
+  margin-left: rem(-383);
   margin-top: rem(18);
   border: 1px solid var(--main-purple);
 }
 .skills-header::before{
+  font-family: 'Shadows Into Light', cursive;
   position: absolute;
   content: '<h2>';
   opacity: .4;
   color: var(--main-purple);
-  font-size: rem(10);
+  font-size: rem(15);
   margin-left: rem(-30);
+  margin-top: rem(-10);
 }
 .skills-header::after{
+  font-family: 'Shadows Into Light', cursive;
   position: absolute;
   content: '</h2>';
   opacity: .4;
   color: var(--main-purple);
-  font-size: rem(10);
+  font-size: rem(15);
   margin-top: rem(59);
   margin-left: rem(-399);
 }
 
 .skills-text-one {
-  padding-top: rem(40);
+  padding-top: rem(30);
   color: var(--main-purple);
   text-align: center;
   font-size: rem(15);
@@ -129,8 +132,8 @@
     margin-left: rem(-296);
   }
   .skills-header span {
-    height: 20px;
-    margin-left: rem(-284);
+    height: 22px;
+    margin-left: rem(-280);
     margin-top: rem(17);
     border: 1px solid var(--main-purple);
   }
