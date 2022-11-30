@@ -53,12 +53,13 @@
 }
 
 .skill {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
   margin-top: rem(20);
   border-radius: 7px;
   padding: rem(28);
   text-align: center;
-  background-color: rgb(219, 206, 226);
-  color: var((--main-purple));
+  background-color: var(--cards-bg);
+  color: var(--main-purple);
 
   &__bar progress {
     background-color: var(--white);
