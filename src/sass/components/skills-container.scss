@@ -77,11 +77,13 @@
 .skill {
   box-shadow: 1px 3px 5px rgba(86, 49, 121, 0.7);
   margin-top: rem(10);
-  // border-radius: 4px;
+  // transform: translateX(0);
+  // opacity: .2;
   padding: rem(28);
   text-align: center;
   background-color: var(--white);
   color: var(--main-purple);
+  // animation: load-skills 3s ease-out forwards;
 
   &__name {
     margin-top: rem(6);
@@ -138,3 +140,14 @@
     border: 1px solid var(--main-purple);
   }
 }
+
+// @keyframes load-skills {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(300px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// } 
