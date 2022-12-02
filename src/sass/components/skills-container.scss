@@ -120,13 +120,21 @@
   }
 
   &__bar progress {
+
     margin-top: rem(6);
     background-color: var(--white);
     border: 3px solid var(--main-purple);
   }
 
-  &__bar progress::-moz-progress-bar {
+  &__bar progress::-moz-progress-bar{
     background-color: var(--main-purple);
+  }
+  // for chrome browers - from css tricks
+  progress[value]::-webkit-progress-bar {
+    background-color: var(--main);
+  }
+  progress[value]::-webkit-progress-value {
+      background-color: var(--main-purple);
   }
 }
 .dots-bg {
