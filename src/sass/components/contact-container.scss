@@ -1,0 +1,27 @@
+@use "../utils" as *;
+
+.contact-section {
+    background-color: var(--main-purple);
+    margin-top: rem(40);
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+        text-align: center;
+        font-weight: 300;
+    }
+    &__text:first-child {
+        margin-top: rem(50);
+    }
+}
