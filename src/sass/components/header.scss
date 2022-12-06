@@ -1,12 +1,11 @@
 @use "../utils" as *;
 
 .header {
-
   background-color: var(--second-lime);
+  
 }
 
 .nav {
-  
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
@@ -57,9 +56,10 @@
     a {
       color: #fff;
       position: relative;
-      transition: .4s color;
+      transition: 0.4s color;
     }
-    a:focus, a:hover {
+    a:focus,
+    a:hover {
       outline: none;
       color: var(--main-purple);
     }
@@ -71,7 +71,7 @@
       bottom: 0;
       left: 0;
       width: 0%;
-      transition: .4s all;
+      transition: 0.4s all;
     }
     a:hover::after {
       width: 100%;
@@ -81,7 +81,7 @@
     padding: rem(5);
     background-color: #fff;
     color: var(--second-lime);
-    transition: .4s all;
+    transition: 0.4s all;
   }
   &__links:last-of-type a:hover {
     background-color: var(--main-purple);
@@ -89,76 +89,79 @@
   }
 }
 
-  @media (min-width: 758px) and (max-width: 1000px) {
-    .nav__logo {
-      display: none;
-    }
+@media (min-width: 758px) and (max-width: 1000px) {
+  .nav__logo {
+    display: none;
+  }
 
-    .nav__name {
-      font-size: rem(25);
-      font-weight: 700;
-      margin: auto;
+  .nav__name {
+    font-size: rem(25);
+    font-weight: 700;
+    margin: auto;
 
-      span {
-        font-size: rem(40);
-        color: var(--main-purple);
-      }
+    span {
+      font-size: rem(40);
+      color: var(--main-purple);
     }
-    .nav__links {
-      font-size: rem(19);
+  }
+  .nav__links {
+    font-size: rem(19);
+  }
+}
+
+@media (max-width: 757px) {
+  nav {
+    padding: rem(10);
+    align-items: flex-start;
+  }
+
+  .nav__logo {
+    display: none;
+  }
+
+  .nav__name {
+    font-size: rem(25);
+    margin: auto;
+    padding-bottom: rem(10);
+    padding-left: rem(45);
+
+    span {
+      color: var(--main-purple);
+      font-size: rem(50);
     }
   }
 
-  @media (max-width: 757px) {
-    nav {
-      padding: rem(10);
-      align-items: flex-start;
-    }
-
-    .nav__logo {
-      display: none;
-    }
-
-    .nav__name {
-      font-size: rem(25);
-      margin: auto;
-      padding-bottom: rem(10);
-      padding-left: rem(45);
-
-      span {
-        color: var(--main-purple);
-        font-size: rem(50);
-      }
-    }
-
-    .nav__list {
-      width: 100vw;
-      height: 100vh;
-      background-color: var(--second-lime);
-      position: fixed;
-      display: flex;
-      overflow-x: hidden;
-      justify-content: space-evenly;
-      flex-direction: column;
-      margin-top: 0;
-      bottom: 0;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 99;
-      transform: translateX(-1050px);
-      transition: transform 0.4s ease-in-out;
-    }
-    .nav__list.active {
-      transform: translateX(0);
-    }
-
-    ul.show {
-      display: flex;
-      flex-direction: column;
-    }
+  .nav__list {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--second-lime);
+    position: fixed;
+    display: flex;
+    overflow-x: hidden;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    transform: translateX(-1050px);
+    transition: transform 0.4s ease-in-out;
+  }
+  .nav__list.active {
+    transform: translateX(0);
   }
 
+  ul.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    padding: rem(10);
+  }
+}
 
 @keyframes rotate {
   from {
