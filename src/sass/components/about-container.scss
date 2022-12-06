@@ -86,15 +86,19 @@
       }
     }
     .image__left {
-      width: 50%;
+      min-width: 50%;
       display: flex;
       justify-content: center;
       &--one {
+        padding: 10px;
+        border-left: 2px solid var(--second-lime);
+        border-right: 2px solid var(--second-lime);
+        border-radius: 5px;
         width: 300px;
-        object-fit: fill;
-        transform: rotate(0);
-        opacity: 0.5;
-        animation: rotate 20s infinite linear both;
+        object-fit: cover;
+        // transform: rotate(0);
+        
+        // animation: rotate 20s infinite linear both;
       }
     }
   }

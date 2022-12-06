@@ -2,9 +2,11 @@
 
 .header {
   padding: rem(10);
+  background-color: var(--second-lime);
 }
 
 .nav {
+  
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
