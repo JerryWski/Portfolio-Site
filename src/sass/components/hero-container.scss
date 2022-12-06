@@ -1,6 +1,7 @@
 @use "../utils" as *;
 
 .intro-section {
+  background-color: var(--main-purple);
   width: 100%;
   color: white;
   display: flex;
@@ -81,8 +82,8 @@
     display: block;
     width: inherit;
     height: inherit;
-    margin-right: rem(-110);
-    margin-top: rem(100);
+    margin-right: rem(-90);
+    margin-top: rem(105);
     background-image: url(/src/img/img2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
