@@ -2,6 +2,9 @@ const hamburgerBtn = document.querySelector(".hamburger");
 const navList = document.querySelector(".nav__list");
 const arrowBtns = document.querySelectorAll(".card__button");
 const footerYear = document.querySelector('.footer__year');
+const navLinks = document.querySelectorAll('.links');
+const linksArr = Array.from(navLinks);
+
 
 const toggleButton = () => {
   hamburgerBtn.classList.toggle("is-active");
@@ -34,4 +37,7 @@ const currentYear = () => {
 
 currentYear();
 hamburgerBtn.addEventListener("click", toggleButton);
-navList.addEventListener("click", removeSticky);
+
+linksArr.forEach(links => {
+  links.addEventListener("click", removeSticky);
+});
