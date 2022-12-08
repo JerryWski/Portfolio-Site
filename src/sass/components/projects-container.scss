@@ -165,6 +165,7 @@
     .one {
       background-image: url(/src/img/project1.jpg);
       text-align: center;
+      
     }
 
     .two {
@@ -190,6 +191,18 @@
       font-size: rem(22);
       font-weight: 300;
     }
+  }
+  .card-wrapper:nth-child(1) {
+    transition-delay: .2s;
+  }
+  .card-wrapper:nth-child(2) {
+    transition-delay: .3s;
+  }
+  .card-wrapper:nth-child(3) {
+    transition-delay: .4s;
+  }
+  .card-wrapper:nth-child(4) {
+    transition-delay: .5s;
   }
 }
 
