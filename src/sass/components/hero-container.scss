@@ -134,14 +134,17 @@
 
 @keyframes fade-hero {
   0% {
+    filter: blur(10px);
     transform: translateX(-1000px);
     opacity: 0;
   }
   50% {
     opacity: 0.5;
+    filter: blur(5px);
   }
   100% {
     transform: translateX(0);
     opacity: 1;
+    filter: blur(0px);
   }
 }
