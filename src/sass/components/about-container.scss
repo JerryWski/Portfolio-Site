@@ -10,9 +10,9 @@
 
     &__header {
       font-size: rem(70);
-      margin-top: rem(40);
+      margin-top: rem(30);
       font-weight: 700;
-      margin-bottom: rem(50);
+      margin-bottom: rem(40);
       color: var(--second-lime);
     }
 
@@ -111,6 +111,8 @@
       padding: rem(20);
     }
     .about__header {
+      margin-top: rem(40);
+      margin-bottom: rem(30);
       font-size: rem(43);
     }
     .about__bio--left {
