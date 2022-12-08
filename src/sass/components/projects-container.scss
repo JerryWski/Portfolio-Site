@@ -5,12 +5,13 @@
   position: relative;
 
   .projects-header {
+    padding-top: rem(5);
     padding-left: rem(49);
     h2 {
       color: var(--white);
       position: relative;
       font-size: rem(60);
-      margin-top: rem(89);
+      margin-top: rem(69);
       margin-bottom: rem(30);
       text-align: left;
     }
@@ -29,7 +30,7 @@
   }
   .projects-bg-image {
     opacity: .3;
-    top: -3%;
+    top: 4%;
     position: absolute;
     left: 83%;
     width: 250px;
@@ -229,7 +230,7 @@
 @media (min-width: 601px) and (max-width: 1200px) {
   .projects-section {
     .projects-bg-image {
-      top: -3%;
+      top: 4%;
     }
   }
   .projects {
@@ -243,7 +244,7 @@
 @media (min-width: 1201px) and (max-width: 1557px) {
   .projects-section {
     .projects-bg-image {
-      top: -4%;
+      top: 4%;
     }
   }
   .projects {

@@ -4,8 +4,20 @@ const arrowBtns = document.querySelectorAll(".card__button");
 const footerYear = document.querySelector('.footer__year');
 const navLinks = document.querySelectorAll('.links');
 const linksArr = Array.from(navLinks);
+const hiddenElements = document.querySelectorAll('.hide');
 
+//iobserver
+const observer = new IntersectionObserver ((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if(entry.isIntersecting) {
+      entry.target.classList.add('open')
+    }
+  });
+})
 
+hiddenElements.forEach((el) => observer.observe(el));
+//
 const toggleButton = () => {
   hamburgerBtn.classList.toggle("is-active");
   navList.classList.toggle("active");

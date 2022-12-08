@@ -9,6 +9,13 @@
   justify-content: space-evenly;
   padding-bottom: 100px;
 }
+.hide {
+  opacity: 0;
+  transition: all 2s;
+}
+.open {
+  opacity: 1;
+}
 
 .hero {
   margin-top: rem(20);
