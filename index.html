@@ -36,16 +36,49 @@
         /></a>
         <p class="nav__name">Jerry_Wski<span>.</span></p>
         <ul class="nav__list">
-          <li class="nav__links"><a class="links" href="#about-me">About me</a></li>
-          <li class="nav__links"><a class="links" href="#projects">Projects</a></li>
+          <li class="nav__links">
+            <a class="links" href="#about-me">About me</a>
+          </li>
+          <li class="nav__links">
+            <a class="links" href="#projects">Projects</a>
+          </li>
           <li class="nav__links"><a class="links" href="#skills">Skills</a></li>
-          <li class="nav__links"><a class="links" href="#contact">Contact</a></li>
+          <li class="nav__links">
+            <a class="links" href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="intro-section">
+        <div class="bg-music">
+          <svg
+            class="speaker-img"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="hsl(78, 62%, 61%)"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-speaker"
+          >
+            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+            <circle cx="12" cy="14" r="4"></circle>
+            <line x1="12" y1="6" x2="12.01" y2="6"></line>
+          </svg>
+          <!-- <img class="speaker-img" src="./src/img/speaker.svg" alt="" /> -->
+          <audio class="audio">
+            <source src="./src/img/muza1.mp3" type="audio/mp3" />
+          </audio>
+          <button class="play-button">
+            Music <span class="music-on-off">ON</span>
+          </button>
+        </div>
+
         <div class="hero">
           <h1 class="hero__name">
             <span class="hero__name--letter">H</span>ello, I'm Jerry
@@ -71,9 +104,9 @@
 
       <section class="about-section" id="about-me">
         <div class="about wrapper hide">
-          <h2 class="about__header ">Let's meet.</h2>
+          <h2 class="about__header">Let's meet.</h2>
 
-          <div class="about__container ">
+          <div class="about__container">
             <div class="about__bio about__bio--left">
               <h3 class="about__subheader">New Begining</h3>
               <p class="about__text">
@@ -105,7 +138,11 @@
 
           <div class="about__container right">
             <div class="about__image image__left">
-              <img class="image__left--one" src="./src/img/developer.jpg" alt="" />
+              <img
+                class="image__left--one"
+                src="./src/img/developer.jpg"
+                alt=""
+              />
             </div>
             <div class="about__bio about__bio--right">
               <h3 class="about__subheader">Will of Fire</h3>
@@ -137,8 +174,12 @@
           <img src="/src/img/gears.svg" alt="" />
         </div>
 
-        <div class="projects wrapper ">
-          <img class="gear-image" src="/src/img/gears.svg" alt="gears-picture" />
+        <div class="projects wrapper">
+          <img
+            class="gear-image"
+            src="/src/img/gears.svg"
+            alt="gears-picture"
+          />
           <div class="cards-container">
             <div class="card-wrapper hide">
               <div class="card one">
@@ -295,7 +336,7 @@
         </div>
       </section>
     </main>
-    
+
     <footer>
       <div class="footer">
         <p class="footer__text">created by Jerry_Wski</p>

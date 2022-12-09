@@ -9,7 +9,22 @@
   justify-content: space-evenly;
   padding-bottom: 100px;
 }
-
+//testing bg-music for fun
+.bg-music {
+  
+  display: flex;
+  height: fit-content;
+  .play-button {
+    color: var(--second-lime);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    .music-on-off {
+      color: var(--second-lime);
+    }
+  }
+}
+//
 .hero {
   margin-top: rem(20);
   width: 50%;

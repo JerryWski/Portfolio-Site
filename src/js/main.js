@@ -5,6 +5,30 @@ const footerYear = document.querySelector('.footer__year');
 const navLinks = document.querySelectorAll('.links');
 const linksArr = Array.from(navLinks);
 const hiddenElements = document.querySelectorAll('.hide');
+const audio = document.querySelector('.audio');
+const playPauseBtn = document.querySelector('.play-button');
+const musicOnOff = document.querySelector('.music-on-off');
+const speakerImg = document.querySelector('.speaker-img')
+console.log(speakerImg.attributes.fill);
+let count = 0;
+
+const playPause = () => {
+  if(count== 0) {
+    count = 1
+    audio.play();
+    musicOnOff.innerHTML = "OFF";
+    musicOnOff.style.color= "hsl(342, 98%, 53%)";
+    speakerImg.setAttribute('fill', 'hsl(342, 98%, 53%)');
+  }else {
+    count = 0;
+    audio.pause();
+    musicOnOff.innerHTML = "ON";
+    musicOnOff.style.color= "var(--second-lime)";
+    speakerImg.setAttribute('fill', 'var(--second-lime)');
+  }
+}
+
+playPauseBtn.addEventListener('click', playPause)
 
 //iobserver
 const observer = new IntersectionObserver ((entries) => {
