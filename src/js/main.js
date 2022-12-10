@@ -9,7 +9,7 @@ const audio = document.querySelector('.audio');
 const playPauseBtn = document.querySelector('.play-button');
 const musicOnOff = document.querySelector('.music-on-off');
 const speakerImg = document.querySelector('.speaker-img')
-console.log(speakerImg.attributes.fill);
+
 let count = 0;
 
 const playPause = () => {
@@ -28,7 +28,6 @@ const playPause = () => {
   }
 }
 
-playPauseBtn.addEventListener('click', playPause)
 
 //iobserver
 const observer = new IntersectionObserver ((entries) => {
@@ -63,10 +62,10 @@ for (const btn of arrowBtns) {
 }
 
 for (const btn of arrowBtns) {
-    btn.addEventListener("mouseleave", function () {
-      this.classList.remove("hide");
-    });
-  }
+  btn.addEventListener("mouseleave", function () {
+    this.classList.remove("hide");
+  });
+}
 
 const currentYear = () => {
   const year = (new Date).getFullYear();
@@ -75,6 +74,7 @@ const currentYear = () => {
 
 currentYear();
 hamburgerBtn.addEventListener("click", toggleButton);
+playPauseBtn.addEventListener('click', playPause);
 
 linksArr.forEach(links => {
   links.addEventListener("click", removeSticky);

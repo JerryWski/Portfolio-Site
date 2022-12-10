@@ -11,10 +11,19 @@
 }
 //testing bg-music for fun
 .bg-music {
-  
+  top: rem(115);
+  right: rem(45);
+  left: auto;
+  position: fixed;
+  border-radius: 5px;
+  border: 1px solid var(--white);
+  background-color: rgba(59, 20, 122, 0.6);
   display: flex;
   height: fit-content;
+  z-index: 1000;
   .play-button {
+    font-size: rem(13);
+    font-weight: 700;
     color: var(--second-lime);
     border: none;
     background-color: transparent;
@@ -110,6 +119,9 @@
     display: block;
     margin-top: rem(45);
   }
+  .bg-music {
+    top: rem(135);
+  }
 }
 
 @media (max-width: 670px) {
@@ -150,7 +162,7 @@
 @keyframes fade-hero {
   0% {
     filter: blur(10px);
-    transform: translateX(-1000px);
+    transform: translateX(-100%);
     opacity: 0;
   }
   50% {
