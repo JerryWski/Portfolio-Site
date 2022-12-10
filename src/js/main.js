@@ -36,8 +36,8 @@ const observer = new IntersectionObserver ((entries) => {
     if(entry.isIntersecting) {
       entry.target.classList.add('open');
     }
-    else{entry.target.classList.remove('open')} 
-    // if we want loop effeft
+    // else{entry.target.classList.remove('open')} 
+    // if we want loop effect
   });
 })
 
