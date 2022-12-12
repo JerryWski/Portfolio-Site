@@ -69,7 +69,7 @@
   padding: rem(40);
   background-color: var(--cards-bg);
   padding: rem;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 70%;
   flex-wrap: wrap;
@@ -152,6 +152,13 @@
 .skill:nth-child(5) {
   transition-delay: .6s;
 }
+.skill:nth-child(6) {
+  transition-delay: .7s;
+}
+.skill:nth-child(7) {
+  transition-delay: .8s;
+}
+
 
 .loading-dots {
   margin: 0 auto;
