@@ -29,7 +29,7 @@
     }
   }
   .projects-bg-image {
-    opacity: .3;
+    opacity: 0.3;
     top: 2%;
     position: absolute;
     left: 75%;
@@ -47,14 +47,13 @@
     display: grid;
     justify-items: center;
     .gear-image {
-      opacity: .2;
+      opacity: 0.2;
       transform: rotate(0);
       animation: gears-rotate 20s linear infinite both;
       position: absolute;
       top: 1%;
       width: 240px;
     }
-    
   }
 
   .cards-container {
@@ -90,12 +89,13 @@
         padding: rem(25);
         position: absolute;
         z-index: 10;
-        border: none;
+        border: 1px solid var(--white);
         background: var(--main-purple);
         color: var(--second-lime);
         font-size: rem(15);
         font-weight: 700;
         cursor: pointer;
+        transform: translateX(0); //beacuse .hide class is breaking clip path effect on button
 
         .fa-circle-info {
           position: relative;
@@ -112,11 +112,8 @@
           height: 100%;
           border: 2px solid var(--main-purple);
           border-radius: 50%;
-          animation: pulse 2s infinite;
+          animation: pulse 1s infinite;
         }
-      }
-      .hide {
-        opacity: 0;
       }
 
       &__button:hover ~ .card__info {
@@ -166,7 +163,6 @@
     .one {
       background-image: url(/src/img/project1.jpg);
       text-align: center;
-      
     }
 
     .two {
@@ -194,21 +190,20 @@
     }
   }
   .card-wrapper:nth-child(1) {
-    transition-delay: .2s;
+    transition-delay: 0.2s;
   }
   .card-wrapper:nth-child(2) {
-    transition-delay: .3s;
+    transition-delay: 0.3s;
   }
   .card-wrapper:nth-child(3) {
-    transition-delay: .4s;
+    transition-delay: 0.4s;
   }
   .card-wrapper:nth-child(4) {
-    transition-delay: .5s;
+    transition-delay: 0.5s;
   }
 }
 
 @media (max-width: 600px) {
-  
   .projects {
     .cards-container {
       grid-template-columns: repeat(1, 1fr);
@@ -240,7 +235,6 @@
   }
 }
 
-
 @media (min-width: 601px) and (max-width: 1200px) {
   .projects-section {
     .projects-bg-image {
@@ -266,7 +260,6 @@
       grid-template-columns: repeat(3, 1fr);
       .four {
         grid-column-start: 2;
-        
       }
     }
   }
