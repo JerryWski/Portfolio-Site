@@ -36,13 +36,13 @@
   }
 
   &__list {
-    padding: rem(20) rem(64);
+    padding: rem(0) rem(64);
     width: 700px;
     display: flex;
     list-style: none;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: rem(30);
+    
     // margin-right: rem(65);
     text-decoration: none;
   }
