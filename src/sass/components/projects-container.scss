@@ -3,6 +3,7 @@
 .projects-section {
   background-color: var(--main-purple);
   position: relative;
+  width: 100%;
 
   .projects-header {
     padding-top: rem(5);
@@ -264,6 +265,15 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .projects-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+//animations 
 
 @keyframes pulse {
   from {

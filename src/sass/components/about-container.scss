@@ -2,7 +2,7 @@
 
 .about-section {
   background-color: var(--white);
-  
+  width: 100%;
   display: flex;
 
   .about {
@@ -31,7 +31,7 @@
       margin-right: rem(50);
     }
     &__bio--right {
-      background-image: url(/src/img/stairs2.svg);
+      background-image: url(../img/stairs2.svg);
       background-repeat: no-repeat;
       background-position-x: 160px;
       background-size: contain;
@@ -97,9 +97,6 @@
         width: 300px;
         object-fit: cover;
         opacity: .9;
-        // transform: rotate(0);
-        
-        // animation: rotate 20s infinite linear both;
       }
     }
   }
@@ -141,6 +138,14 @@
     overflow: hidden;
   }
 }
+
+@media (min-width: 1440px) {
+  .about-section {
+    display: flex;
+    justify-content: center;
+  }
+}
+//animations
 
 @keyframes slide-left {
   0% {

@@ -153,12 +153,18 @@
     padding: 0;
     margin: 30px;
     .hero-avatar {
-      background-image: url(/src/img/img3.jpg);
+      background-image: url(../img/img3.jpg);
       width: 100%;
       left: 20px;
       top: -81px;
       position: absolute;
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .intro-section {
+    justify-content: center;
   }
 }
 
