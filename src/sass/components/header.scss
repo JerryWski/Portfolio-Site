@@ -138,7 +138,7 @@
     position: fixed;
     display: flex;
     overflow-x: hidden;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     margin-top: 0;
     bottom: 0;
@@ -148,6 +148,10 @@
     z-index: 99;
     transform: translateX(-1050px);
     transition: transform 0.4s ease-in-out;
+
+    .nav__links {
+      padding: 20px;
+    }
   }
   .nav__list.active {
     transform: translateX(0);
@@ -156,10 +160,6 @@
   ul.show {
     display: flex;
     flex-direction: column;
-  }
-
-  .links {
-    padding: rem(10);
   }
 }
 
