@@ -21,8 +21,10 @@
 
   &__name {
     color: #fff;
-
+    display: flex;
+    align-items: center;
     margin-right: auto;
+    padding-left: rem(15);
     font-family: var(--font);
     font-size: rem(30);
     font-weight: 700;
