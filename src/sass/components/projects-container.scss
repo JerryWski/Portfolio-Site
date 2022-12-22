@@ -189,6 +189,9 @@
       font-size: rem(22);
       font-weight: 300;
     }
+    .card-link:focus {
+      color: var(--second-lime);
+    }
   }
   .card-wrapper:nth-child(1) {
     transition-delay: 0.2s;

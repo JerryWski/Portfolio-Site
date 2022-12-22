@@ -86,6 +86,9 @@
     color: var(--second-lime);
     border: 1px solid var(--second-lime);
   }
+  &__button:focus {
+    background-color: var(--second-lime);
+  }
 }
 
 .hero-image {
