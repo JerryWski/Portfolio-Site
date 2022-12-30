@@ -21,8 +21,10 @@
   display: flex;
   height: fit-content;
   z-index: 1000;
+  padding: rem(3);
   .play-button {
     font-size: rem(13);
+    letter-spacing: 1px;
     font-weight: 700;
     color: var(--second-lime);
     border: none;
@@ -123,7 +125,7 @@
     margin-top: rem(45);
   }
   .bg-music {
-    top: rem(135);
+    top: rem(120);
   }
 }
 
@@ -133,7 +135,9 @@
     background-color: var(--main-purple);
   }
   .bg-music {
-    right: rem(10);
+    right: rem(-40);
+    transform: rotate(90deg);
+    top: rem(130);
   }
   .hero {
     width: 100%;
