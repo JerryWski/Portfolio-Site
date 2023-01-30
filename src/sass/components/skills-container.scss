@@ -14,35 +14,6 @@
   font-size: rem(60);
   margin-bottom: rem(30);
 }
-// .skills-header span {
-//   position: absolute;
-//   content: '';
-//   opacity: .4;
-//   height: 35px;
-//   margin-left: rem(-383);
-//   margin-top: rem(18);
-//   border: 1px solid var(--main-purple);
-// }
-// .skills-header::before{
-//   font-family: 'Shadows Into Light', cursive;
-//   position: absolute;
-//   content: '<h2>';
-//   opacity: .4;
-//   color: var(--main-purple);
-//   font-size: rem(15);
-//   margin-left: rem(-30);
-//   margin-top: rem(-10);
-// }
-// .skills-header::after{
-//   font-family: 'Shadows Into Light', cursive;
-//   position: absolute;
-//   content: '</h2>';
-//   opacity: .4;
-//   color: var(--main-purple);
-//   font-size: rem(15);
-//   margin-top: rem(59);
-//   margin-left: rem(-399);
-// }
 
 .skills-text-one {
   padding-top: rem(30);
@@ -75,61 +46,101 @@
   flex-wrap: wrap;
 }
 
-.skill {
-  box-shadow: 1px 3px 5px rgba(86, 49, 121, 0.7);
+.skill{
+  display: flex;
+  width: 300px;
   margin: rem(13);
   padding: rem(28);
   text-align: center;
-  background-color: var(--white);
-  color: var(--main-purple);
-  
-
-  &__name {
-    margin-top: rem(6);
-    font-weight: 300;
-    font-size: rem(25);
-  }
-
-  &__bar progress {
-    margin-top: rem(6);
-    background-color: var(--white);
-    border: 3px solid var(--main-purple);
-  }
-
-  &__bar progress::-moz-progress-bar{
-    background-color: var(--main-purple);
-  }
-  // for chrome browers - from css tricks
-  progress[value]::-webkit-progress-bar {
-    background-color: var(--main);
-  }
-  progress[value]::-webkit-progress-value {
-      background-color: var(--main-purple);
-  }
+  border-radius: 8px;
+  background: #fff;
+  row-gap: 30px;
+  flex-direction: column;
+  align-items: center;
 }
+.circular-progress{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: conic-gradient(hsl(248, 44%, 42%) 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circular-progress::before{
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.progress-value{
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: hsl(248, 44%, 42%);
+}
+.text{
+  font-size: 30px;
+  font-weight: 500;
+  color: hsl(248, 44%, 42%);
+}
+
+// .skill {
+//   box-shadow: 1px 3px 5px rgba(86, 49, 121, 0.7);
+//   margin: rem(13);
+//   padding: rem(28);
+//   text-align: center;
+//   background-color: var(--white);
+//   color: var(--main-purple);
+
+//   &__name {
+//     margin-top: rem(6);
+//     font-weight: 300;
+//     font-size: rem(25);
+//   }
+
+//   &__bar progress {
+//     margin-top: rem(6);
+//     background-color: var(--white);
+//     border: 3px solid var(--main-purple);
+//   }
+
+//   &__bar progress::-moz-progress-bar {
+//     background-color: var(--main-purple);
+//   }
+//   // for chrome browers - from css tricks
+//   progress[value]::-webkit-progress-bar {
+//     background-color: var(--main);
+//   }
+//   progress[value]::-webkit-progress-value {
+//     background-color: var(--main-purple);
+//   }
+// }
 
 .skill:nth-child(1) {
-  transition-delay: .2s;
+  transition-delay: 0.2s;
 }
 .skill:nth-child(2) {
-  transition-delay: .3s;
+  transition-delay: 0.3s;
 }
 .skill:nth-child(3) {
-  transition-delay: .4s;
+  transition-delay: 0.4s;
 }
 .skill:nth-child(4) {
-  transition-delay: .5s;
+  transition-delay: 0.5s;
 }
 .skill:nth-child(5) {
-  transition-delay: .6s;
+  transition-delay: 0.6s;
 }
 .skill:nth-child(6) {
-  transition-delay: .7s;
+  transition-delay: 0.7s;
 }
 .skill:nth-child(7) {
-  transition-delay: .8s;
+  transition-delay: 0.8s;
 }
-
 
 .loading-dots {
   margin: 0 auto;
@@ -148,7 +159,7 @@
     font-weight: 700;
     position: absolute;
     color: var(--second-lime);
-    animation: blinking .9s infinite;
+    animation: blinking 0.9s infinite;
   }
 }
 .loading-dots > div {
@@ -182,7 +193,7 @@
     padding-left: 1.063rem;
     font-size: rem(43);
   }
-  
+
   .skills-container {
     flex-direction: column;
     background-color: inherit;
@@ -205,7 +216,6 @@
     flex-direction: column;
     text-align: center;
     margin-bottom: rem(20);
-    
   }
   // .skills-header::after{
   //   margin-top: rem(40);
@@ -218,7 +228,6 @@
   //   border: 1px solid var(--main-purple);
   // }
 }
-
 
 @keyframes loading-dots1 {
   0% {
@@ -249,7 +258,7 @@
   0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
