@@ -180,6 +180,10 @@
       background-image: url(../img/project5.jpg);
     }
 
+    .five {
+      background-image:  url(../img/project6.png);
+    }
+
     .card-link {
       padding-top: rem(28);
       color: var(--white);
@@ -204,6 +208,9 @@
   }
   .card-wrapper:nth-child(4) {
     transition-delay: 0.5s;
+  }
+  .card-wrapper:nth-child(5) {
+    transition-delay: 0.6s;
   }
 }
 
