@@ -34,11 +34,11 @@
 .skills-container {
   position: relative;
   margin: auto;
-  margin-top: rem(55);
+  margin-top: rem(10);
   margin-bottom: rem(25);
   display: flex;
   padding: rem(40);
-  // background-color: var(--cards-bg);
+  background-color: var(--cards-bg);
   padding: rem;
   justify-content: center;
   align-items: center;
@@ -48,12 +48,12 @@
 
 .skill {
   display: flex;
-  width: 200px;
+  width: 220px;
   margin: rem(13);
   padding: rem(28);
   text-align: center;
   border-radius: 8px;
-  background: #fff;
+  background-color: var(--cards-bg);
   row-gap: 20px;
   flex-direction: column;
   align-items: center;
@@ -175,6 +175,7 @@
   }
 
   .skill {
+    background-color: var(--white);
     width: 90%;
     display: flex;
     flex-direction: column;
