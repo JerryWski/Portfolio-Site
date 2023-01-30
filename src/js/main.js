@@ -81,27 +81,23 @@ linksArr.forEach((links) => {
 
 //animation for circle skills progress bars
 
-let circularProgress = document.querySelectorAll(".circular-progress"),
-  progressValue = document.querySelectorAll(".progress-value");
+let circularProgress = document.querySelectorAll(".skill__progress"),
+  progressValue = document.querySelectorAll(".skill__progress-value");
+ 
 
-console.log(progressValue);
+circularProgress.forEach((item, index) => {
+  let progressStartValue = 0;
+  let progressEndValue = parseInt(progressValue[index].textContent);
+  let speed = 10;
 
-let progressStartValue = 0,
-  speed = 10;
-
-  for (let i = 0; i < circularProgress.length; i++) {
-    let progressEndValue = parseInt(progressValue[i].textContent);
-    let progress = setInterval(() => {
+  function updateProgress() {
+    if (progressStartValue >= progressEndValue) return;
     progressStartValue++;
-
-    progressValue[i].textContent = `${progressStartValue}%`;
-    circularProgress[i].style.background = `conic-gradient(hsl(248, 44%, 42%) ${
-      progressStartValue * 3.6}deg, #ededed 0deg)`;
-      circularProgress[i].style.transition = '0.3s'
-
-    if (progressStartValue == progressEndValue) {
-      clearInterval(progress);
-    }
-  }, speed);
-}
-
+    progressValue[index].textContent = `${progressStartValue}%`;
+    item.style.background = `conic-gradient(hsl(248, 44%, 42%) ${
+      progressStartValue * 3.6
+    }deg, #ededed 0deg)`;
+    setTimeout(updateProgress, speed);
+  }
+  updateProgress();
+});

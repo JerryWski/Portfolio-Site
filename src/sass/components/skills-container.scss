@@ -46,79 +46,51 @@
   flex-wrap: wrap;
 }
 
-.skill{
+.skill {
   display: flex;
-  width: 300px;
+  width: 240px;
   margin: rem(13);
   padding: rem(28);
   text-align: center;
   border-radius: 8px;
   background: #fff;
-  row-gap: 30px;
+  row-gap: 20px;
   flex-direction: column;
   align-items: center;
-}
-.circular-progress{
-  position: relative;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  background: conic-gradient(hsl(248, 44%, 42%) 3.6deg, #ededed 0deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.circular-progress::before{
-  content: "";
-  position: absolute;
-  height: 210px;
-  width: 210px;
-  border-radius: 50%;
-  background-color: #fff;
-}
-.progress-value{
-  position: relative;
-  font-size: 40px;
-  font-weight: 600;
-  color: hsl(248, 44%, 42%);
-}
-.text{
-  font-size: 30px;
-  font-weight: 500;
-  color: hsl(248, 44%, 42%);
-}
 
-// .skill {
-//   box-shadow: 1px 3px 5px rgba(86, 49, 121, 0.7);
-//   margin: rem(13);
-//   padding: rem(28);
-//   text-align: center;
-//   background-color: var(--white);
-//   color: var(--main-purple);
+  &__progress {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(hsl(248, 44%, 42%) 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-//   &__name {
-//     margin-top: rem(6);
-//     font-weight: 300;
-//     font-size: rem(25);
-//   }
+    &-value {
+      position: relative;
+      font-size: 40px;
+      font-weight: 600;
+      color: hsl(248, 44%, 42%);
+    }
+  }
 
-//   &__bar progress {
-//     margin-top: rem(6);
-//     background-color: var(--white);
-//     border: 3px solid var(--main-purple);
-//   }
+  &__progress::before {
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
 
-//   &__bar progress::-moz-progress-bar {
-//     background-color: var(--main-purple);
-//   }
-//   // for chrome browers - from css tricks
-//   progress[value]::-webkit-progress-bar {
-//     background-color: var(--main);
-//   }
-//   progress[value]::-webkit-progress-value {
-//     background-color: var(--main-purple);
-//   }
-// }
+  &__text {
+    font-size: 30px;
+    font-weight: 500;
+    color: hsl(248, 44%, 42%);
+  }
+}
 
 .skill:nth-child(1) {
   transition-delay: 0.2s;
@@ -141,7 +113,9 @@
 .skill:nth-child(7) {
   transition-delay: 0.8s;
 }
-
+.skill:nth-child(8) {
+  transition-delay: 0.9s;
+}
 .loading-dots {
   margin: 0 auto;
   display: flex;
@@ -200,33 +174,13 @@
     padding: 0;
   }
 
-  // .skills-container::before {
-  //   margin-left: rem(-20);
-  // }
-
-  // .skills-container::after {
-  //   margin-right: rem(-15);
-  //   margin-bottom: rem(5);
-  // }
-
   .skill {
     width: 90%;
     display: flex;
-    background-color: var(--cards-bg);
     flex-direction: column;
     text-align: center;
     margin-bottom: rem(20);
   }
-  // .skills-header::after{
-  //   margin-top: rem(40);
-  //   margin-left: rem(-296);
-  // }
-  // .skills-header span {
-  //   height: 22px;
-  //   margin-left: rem(-280);
-  //   margin-top: rem(17);
-  //   border: 1px solid var(--main-purple);
-  // }
 }
 
 @keyframes loading-dots1 {
