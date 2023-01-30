@@ -75,34 +75,6 @@
   flex-wrap: wrap;
 }
 
-// .skills-container::before {
-//   font-size: rem(15);
-//   font-family: 'Shadows Into Light', cursive;
-//   opacity: .4;
-//   top: 0;
-//   left: 0;
-//   color: var(--main-purple);
-//   margin-left: rem(-45);
-//   margin-top: rem(-20);
-//   content: '<div>';
-//   width: 20px;
-//   height: 10px;
-//   position: absolute
-// }
-// .skills-container::after {
-//   font-size: rem(15);
-//   font-family: 'Shadows Into Light', cursive;
-//   color: var(--main-purple);
-//   opacity: .4;
-//   bottom: 0;
-//   right: 0;
-//   margin-bottom: rem(-5);
-//   margin-right: rem(-35);
-//   content: '</div>';
-//   width: 20px;
-//   height: 10px;
-//   position: absolute
-// }
 .skill {
   box-shadow: 1px 3px 5px rgba(86, 49, 121, 0.7);
   margin: rem(13);
