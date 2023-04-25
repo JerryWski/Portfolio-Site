@@ -1,112 +1,116 @@
-@use "../utils" as *;
+@use '../utils' as *;
 
 .contact-section {
-    background-color: var(--main-purple);
-    margin-top: rem(40);
+  background-color: hsl(246, 24%, 31%);
+  background-image: linear-gradient(
+    360deg,
+    rgba(64, 60, 98, 1) 0%,
+    rgba(73, 60, 154, 1) 94%
+  );
+  margin-top: rem(40);
 }
 
 .contact-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    text-align: center;
+    font-weight: 300;
+    color: var(--white);
+    max-width: 600px;
+    margin: rem(40) 0;
+  }
+  &__text:first-child {
+    margin: rem(40) 0;
+  }
+
+  &__header {
+    color: var(--second-lime);
+    font-size: rem(70);
+    margin: 0 auto;
+    margin-bottom: rem(40);
+  }
+
+  &__socials {
+    cursor: pointer;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    min-width: 200px;
+    justify-content: space-around;
     align-items: center;
+  }
+  &__socials > div {
+    transition: all 0.2s linear;
+    transform: scale(1);
+  }
+  &__socials > div:hover {
+    color: var(--second-lime);
+    transform: scale(1.1);
+  }
 
-    &__text {
-        text-align: center;
-        font-weight: 300;
-        color: var(--white);
-        max-width: 600px;
-        margin: rem(40) 0;
-        
-    }
-    &__text:first-child {
-        margin: rem(40) 0;
-        
-    }
-
-    &__header {
-        color: var(--second-lime);
-        font-size: rem(70);
-        margin: 0 auto;
-        margin-bottom: rem(40);
-    }
-
-    &__socials {
-        cursor: pointer;
-        display: flex;
-        min-width: 200px;
-        justify-content: space-around;
-        align-items: center;
-    }
-    &__socials>div {
-        transition: all .2s linear;
-        transform: scale(1);
-    }
-    &__socials>div:hover {
-        color: var(--second-lime);
-        transform: scale(1.1);
-    }
-
-    &__mail {
-        position: relative;
-        margin-bottom: rem(20);
-        padding: rem(20);
-        width: 180px;
-        color: white;
-        border: 1px solid white;
-        text-align: center;
-        transform: scale(1);
-        transition: .3s linear;
-        // border: 1px solid var(--white);
-    }
-    &__mail:focus {
-        background-color: var(--second-lime);
-    }
-    &__mail:hover {
-        color: var(--second-lime);
-        transform: scale(1.1);
-        border: 0;
-    }
-    &__mail::before, &__mail::after {
-        content: "";
-        position: absolute;
-        transition: .3s;
-        width: 0;
-        height: 0;
-    }
-    &__mail::before {
-        top: 0;
-        left: 0;
-    }
-    &__mail::after {
-        bottom: 0;
-        right: 0;
-    }
-    &__mail:hover::before, &__mail:hover::after {
-        width: 90%;
-        height: 90%;
-    }
-    &__mail:hover::before {
-        border-top: 2px solid ;
-        border-left: 2px solid ;
-    }
-    &__mail:hover::after {
-        border-bottom: 2px solid ;
-        border-right: 2px solid ;
-    }
-}   
-
+  &__mail {
+    position: relative;
+    margin-bottom: rem(20);
+    padding: rem(20);
+    width: 180px;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    transform: scale(1);
+    transition: 0.3s linear;
+    // border: 1px solid var(--white);
+  }
+  &__mail:focus {
+    background-color: var(--second-lime);
+  }
+  &__mail:hover {
+    color: var(--second-lime);
+    transform: scale(1.1);
+    border: 0;
+  }
+  &__mail::before,
+  &__mail::after {
+    content: '';
+    position: absolute;
+    transition: 0.3s;
+    width: 0;
+    height: 0;
+  }
+  &__mail::before {
+    top: 0;
+    left: 0;
+  }
+  &__mail::after {
+    bottom: 0;
+    right: 0;
+  }
+  &__mail:hover::before,
+  &__mail:hover::after {
+    width: 90%;
+    height: 90%;
+  }
+  &__mail:hover::before {
+    border-top: 2px solid;
+    border-left: 2px solid;
+  }
+  &__mail:hover::after {
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+  }
+}
 
 @media (max-width: 757px) {
-    .contact__header {
-        font-size: rem(50);
-        margin: 0;
-        margin-bottom: rem(30);
-    }
+  .contact__header {
+    font-size: rem(50);
+    margin: 0;
+    margin-bottom: rem(30);
+  }
 }

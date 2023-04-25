@@ -1,8 +1,12 @@
-@use "../utils" as *;
+@use '../utils' as *;
 
 .header {
-  background-color: var(--second-lime);
-  
+  background-color: rgba(180, 217, 94, 1);
+  background-image: linear-gradient(
+    360deg,
+    rgba(180, 217, 94, 1) 0%,
+    rgba(134, 167, 66, 1) 94%
+  );
 }
 
 .nav {
@@ -44,7 +48,7 @@
     list-style: none;
     align-items: center;
     justify-content: space-evenly;
-    
+
     // margin-right: rem(65);
     text-decoration: none;
   }
@@ -66,7 +70,7 @@
       color: var(--main-purple);
     }
     a::after {
-      content: "";
+      content: '';
       position: absolute;
       background-color: #fff;
       height: 2px;

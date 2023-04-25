@@ -72,6 +72,7 @@ const currentYear = () => {
 };
 
 currentYear();
+
 hamburgerBtn.addEventListener("click", toggleButton);
 playPauseBtn.addEventListener("click", playPause);
 

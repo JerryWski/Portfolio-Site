@@ -1,7 +1,8 @@
 @use "../utils" as *;
 
 .intro-section {
-  background-color: var(--main-purple);
+  background-color: rgba(64, 60, 98, 1);
+background-image: linear-gradient(360deg, rgba(64, 60, 98, 1) 0%, rgba(73, 60, 154, 1) 94%);
   width: 100%;
   color: white;
   display: flex;
