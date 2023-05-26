@@ -1,4 +1,4 @@
-@use "../utils" as *;
+@use '../utils' as *;
 
 .skills-section {
   position: relative;
@@ -170,12 +170,11 @@
 
   .skills-container {
     flex-direction: column;
-    background-color: inherit;
     padding: 0;
   }
 
   .skill {
-    background-color: var(--white);
+    background-color: var(--cards-bg);
     width: 90%;
     display: flex;
     flex-direction: column;
