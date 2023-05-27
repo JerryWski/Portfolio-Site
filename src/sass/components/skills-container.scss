@@ -39,7 +39,6 @@
   display: flex;
   padding: rem(40);
   background-color: var(--cards-bg);
-  padding: rem;
   justify-content: center;
   align-items: center;
   width: 70%;
@@ -48,42 +47,43 @@
 
 .skill {
   display: flex;
-  width: 220px;
+  width: 200px;
+  height: 200px;
+  background-color: var(--white);
+  justify-content: center;
   margin: rem(13);
   padding: rem(28);
   text-align: center;
-  border-radius: 8px;
-  background-color: var(--cards-bg);
-  row-gap: 20px;
+  border-radius: 50%;
   flex-direction: column;
   align-items: center;
 
-  &__progress {
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: conic-gradient(hsl(248, 44%, 42%) 3.6deg, #ededed 0deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  // &__progress {
+  //   position: relative;
+  //   height: 150px;
+  //   width: 150px;
+  //   border-radius: 50%;
+  //   background: conic-gradient(hsl(248, 44%, 42%) 3.6deg, #ededed 0deg);
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
 
-    &-value {
-      position: relative;
-      font-size: 40px;
-      font-weight: 600;
-      color: hsl(248, 44%, 42%);
-    }
-  }
+  //   &-value {
+  //     position: relative;
+  //     font-size: 40px;
+  //     font-weight: 600;
+  //     color: hsl(248, 44%, 42%);
+  //   }
+  // }
 
-  &__progress::before {
-    content: "";
-    position: absolute;
-    height: 133px;
-    width: 133px;
-    border-radius: 50%;
-    background-color: #fff;
-  }
+  // &__progress::before {
+  //   content: "";
+  //   position: absolute;
+  //   height: 133px;
+  //   width: 133px;
+  //   border-radius: 50%;
+  //   background-color: #fff;
+  // }
 
   &__text {
     font-size: 30px;
