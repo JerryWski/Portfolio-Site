@@ -171,15 +171,17 @@
   .skills-container {
     flex-direction: column;
     padding: 0;
+    background-color: var(--white);
   }
 
   .skill {
     background-color: var(--cards-bg);
-    width: 90%;
+    width: 200px;
+    
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-bottom: rem(-10);
+    margin-bottom: 20px;
   }
 }
 
