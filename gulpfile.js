@@ -27,7 +27,6 @@ function sassCompiler(done) {
     .pipe(autoprefix())
     .pipe(cssnano())
     .pipe(sourcemaps.write())
-    .pipe(dest('./build/css'))
     .pipe(dest(paths.sassDest));
   done();
 }
@@ -37,14 +36,12 @@ function sassCompiler(done) {
       .pipe(sourcemaps.init())
       .pipe(uglify())
       .pipe(sourcemaps.write())
-      .pipe(dest('./build/js'))
       .pipe(dest(paths.jsDest));
     done();
 }
   function convertImages(done) {
     src(paths.img)
       .pipe(imagemin())
-      .pipe(dest('./build/img'))
       .pipe(dest(paths.imgDest));
     done();
 }
@@ -70,10 +67,5 @@ function sassCompiler(done) {
 }
 
 const mainFunctions = parallel(sassCompiler, javaScript, convertImages)
-function build(done) {
-  parallel(sassCompiler, javaScript, convertImages)(done);
-}
-// exports.build = series(sassCompiler, javaScript, convertImages);
-exports.build = build
 exports.cleanStuff = cleanStuff
-exports.default = series(build, mainFunctions, startBrowserSync, watchForChanges)
+exports.default = series(mainFunctions, startBrowserSync, watchForChanges)
