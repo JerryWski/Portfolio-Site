@@ -81,7 +81,7 @@
       overflow: hidden;
       width: 285px;
       height: 350px;
-      opacity: 0.7;
+      opacity: 1;
       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
       transform: scale(1);
       transition: 0.4s linear;
@@ -186,17 +186,25 @@
 
     .three {
       background-image: url(../img/project4.jpg);
+      background-position-y: 0px;
     }
 
     .four {
       background-image: url(../img/insta-site.jpg);
+      background-position-y: 0px;
     }
 
     .five {
-      background-image: url(../img/project8.jpg);
+      background-image: url(../img/project8_a.jpg);
+      background-position-y: 0px;
     }
     .six {
       background-image: url(../img/project7.png);
+      background-position-y: 0px;
+    }
+    .seven {
+      background-image: url(../img/dreams_site.jpg);
+      background-position-y: 0px;
     }
 
     .card-link {
