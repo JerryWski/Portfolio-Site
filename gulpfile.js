@@ -67,5 +67,6 @@ function sassCompiler(done) {
 }
 
 const mainFunctions = parallel(sassCompiler, javaScript, convertImages)
+exports.build = series(sassCompiler, javaScript, convertImages);
 exports.cleanStuff = cleanStuff
-exports.default = series(mainFunctions, startBrowserSync, watchForChanges)
+exports.default = series(exports.build, mainFunctions, startBrowserSync, watchForChanges)
