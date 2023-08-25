@@ -27,6 +27,7 @@ function sassCompiler(done) {
     .pipe(autoprefix())
     .pipe(cssnano())
     .pipe(sourcemaps.write())
+    .pipe(dest('./build/css'))
     .pipe(dest(paths.sassDest));
   done();
 }
@@ -36,12 +37,14 @@ function sassCompiler(done) {
       .pipe(sourcemaps.init())
       .pipe(uglify())
       .pipe(sourcemaps.write())
+      .pipe(dest('./build/js'))
       .pipe(dest(paths.jsDest));
     done();
 }
   function convertImages(done) {
     src(paths.img)
       .pipe(imagemin())
+      .pipe(dest('./build/img'))
       .pipe(dest(paths.imgDest));
     done();
 }
