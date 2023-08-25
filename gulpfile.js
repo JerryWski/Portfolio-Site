@@ -76,4 +76,4 @@ function build(done) {
 // exports.build = series(sassCompiler, javaScript, convertImages);
 exports.build = build
 exports.cleanStuff = cleanStuff
-exports.default = series(mainFunctions, startBrowserSync, watchForChanges)
+exports.default = series(build, mainFunctions, startBrowserSync, watchForChanges)
