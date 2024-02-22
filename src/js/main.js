@@ -45,6 +45,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 const toggleButton = () => {
   hamburgerBtn.classList.toggle("is-active");
   navList.classList.toggle("active");
+
   document.body.classList.toggle("sticky-body");
 };
 //this func removes above parameters so that's why page is again scrollable
